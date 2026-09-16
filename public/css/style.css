@@ -1,0 +1,477 @@
+body{
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container{
+    flex: 1;
+}
+/* Navbar */
+.navbar{
+    height: 4rem;
+    background-color: white;
+}
+
+.fa-compass{
+    color: #fe424d;
+    font-size: 1.7rem;
+}
+
+.nav-link{
+    color: #222222 !important;
+}
+
+/* Footer */
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
+.f-info-links , .f-info-socials , .f-info-brand{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-info-socials i{
+    font-size: 1.3rem;
+    margin-right: 0.7rem;
+}
+
+.f-info {
+    text-align: center;
+    height: 8rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+/* cards */
+.listing-card {
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    height: 20rem !important;
+    object-fit: cover !important;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+.card-text p {
+    font-weight: 400 !important;
+}
+
+.listing-link{
+    text-decoration: none;
+}
+
+/* card effect */
+.card-img-overlay{
+    opacity: 0;
+}
+
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+}
+
+/* new page */
+.add-btn , .edit-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/* show page */
+.show-img{
+    height:30vh;
+}
+
+.btns{
+    display: flex;
+}
+
+.show-card{
+    padding:0;
+    padding:0;
+}
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+/* navbar */
+  .btn-search{
+    background-color: #fe424d;
+    color: white;
+    border-radius: 25px;
+    padding: 0.2rem 1rem;
+    white-space: nowrap;
+  }
+
+  .btn-search:hover{
+    background-color: #fe424d;
+    color: white;
+  }
+
+  .btn-search i{
+    display: inline;
+    margin-right: 0.3rem;
+  }
+
+  .search-input{
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    width: 20rem;
+    margin-right: 0.6rem !important;
+  }
+
+  /* Main navbar */
+  .navbar{
+    position: relative;
+  }
+
+  .navbar-main{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 3.5rem;
+  }
+
+  .navbar-brand{
+    margin-right: 0.5rem;
+    flex-shrink: 0;
+  }
+
+  .explore-link{
+    white-space: nowrap;
+    margin-right: 1rem;
+    flex-shrink: 0;
+  }
+
+  /* Search */
+  .navbar-search{
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-search form{
+    display: flex;
+    align-items: center;
+  }
+
+  /* Laptop/Desktop - Search exactly in center */
+  @media (min-width: 992px){
+
+    .navbar-search{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .search-input{
+      width: 20rem;
+    }
+  }
+
+  /* Hamburger */
+  .navbar-toggler{
+    margin-left: 1rem;
+    flex-shrink: 0;
+  }
+
+  /* Desktop menu */
+  .navbar-collapse{
+    flex-grow: 0;
+    margin-left: auto;
+  }
+
+  .navbar-collapse .navbar-nav{
+    align-items: center;
+  }
+
+  .navbar-collapse .nav-link{
+    white-space: nowrap;
+  }
+
+  /* =========================
+     MEDIUM SIZE
+  ========================= */
+
+  @media (max-width: 991px){
+
+    .navbar{
+      padding: 0.5rem 1rem;
+    }
+
+    .navbar-main{
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+
+    .navbar-brand{
+      margin-right: 0.4rem;
+    }
+
+    .explore-link{
+      margin-right: 0.7rem;
+    }
+
+    /* Search immediately after Explore */
+    .navbar-search{
+      position: static;
+      transform: none;
+      flex: 1;
+      min-width: 0;
+    }
+
+    .navbar-search form{
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    .search-input{
+      width: 14rem;
+      max-width: 100%;
+      flex: 1;
+      margin-right: 0.6rem !important;
+    }
+
+    .btn-search{
+      padding: 0.45rem 0.8rem;
+    }
+
+    /* Hamburger */
+    .navbar-toggler{
+      margin-left: 0.7rem;
+      padding: 0.25rem 0.6rem;
+      flex-shrink: 0;
+    }
+
+    /* Hamburger options */
+    .navbar-collapse{
+      width: 100%;
+      margin-top: 0.7rem;
+      margin-left: 0;
+      padding: 0.7rem 1rem;
+      background-color: #f8f9fa;
+      border: 1px solid #ddd;
+      border-radius: 0.8rem;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    }
+
+    .navbar-collapse .navbar-nav{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .navbar-collapse .nav-link{
+      width: 100%;
+      padding: 0.5rem 0;
+    }
+
+    .navbar-collapse .ms-auto{
+      margin-left: 0 !important;
+    }
+  }
+
+  /* =========================
+     SMALL MOBILE
+  ========================= */
+
+  @media (max-width: 576px){
+
+    .navbar{
+      padding: 0.4rem 0.5rem;
+    }
+
+    .navbar-main{
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+
+    /* Logo */
+    .navbar-brand{
+      margin-right: 0.25rem;
+      font-size: 1.1rem;
+    }
+
+    /* Explore */
+    .explore-link{
+      margin-right: 0.35rem;
+      padding: 0.3rem 0.15rem;
+      font-size: 0.8rem;
+    }
+
+    /* Search immediately after Explore */
+    .navbar-search{
+      position: static;
+      transform: none;
+      flex: 1;
+      min-width: 0;
+    }
+
+    .navbar-search form{
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    /* Small search input */
+    .search-input{
+      width: 7rem;
+      min-width: 0;
+      flex: 1;
+      padding: 0.35rem 0.6rem;
+      font-size: 0.75rem;
+      margin-right: 0.6rem !important;
+    }
+
+    /* Small search button */
+    .btn-search{
+      padding: 0.35rem 0.55rem;
+      font-size: 0.75rem;
+    }
+
+    .btn-search i{
+      margin-right: 0.15rem;
+    }
+
+    /* Hamburger */
+    .navbar-toggler{
+      margin-left: 0.35rem;
+      padding: 0.2rem 0.45rem;
+      flex-shrink: 0;
+    }
+
+    /* Hamburger menu */
+    .navbar-collapse{
+      width: 100%;
+      margin-top: 0.7rem;
+      margin-left: 0;
+      padding: 0.7rem 1rem;
+      background-color: #f8f9fa;
+      border: 1px solid #ddd;
+      border-radius: 0.8rem;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    }
+
+    .navbar-collapse .navbar-nav{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .navbar-collapse .nav-link{
+      width: 100%;
+      padding: 0.45rem 0;
+      font-size: 0.9rem;
+    }
+
+    .navbar-collapse .ms-auto{
+      margin-left: 0 !important;
+    }
+  }
+
+/* filters */
+#filters{ 
+    display: flex; 
+    flex-wrap: wrap; 
+    align-items: center; 
+} 
+ 
+.filter{ 
+    text-align: center; 
+    margin-right: 2rem; 
+    opacity: 0.7; 
+    text-decoration: none; 
+    color: inherit; 
+} 
+ 
+.filter:hover{ 
+    opacity: 1; 
+    cursor: pointer; 
+} 
+ 
+.filter p{ 
+    font-size: 0.8rem; 
+} 
+ 
+.tax-info{ 
+    display: none; 
+} 
+ 
+.tax-toggle{ 
+    border: 1px solid black; 
+    border-radius: 1rem; 
+    height: 3.5rem; 
+    padding: 1rem; 
+    margin-bottom: 1rem; 
+    margin-left: 4rem; 
+} 
+ 
+/* Medium devices */ 
+@media (max-width: 992px){ 
+    #filters{ 
+        gap: 1rem; 
+        justify-content: center; 
+    } 
+ 
+    .filter{ 
+        margin-right: 1rem; 
+        min-width: 5rem; 
+    } 
+ 
+    .tax-toggle{ 
+        margin-left: 1rem; 
+    } 
+} 
+
+/* Mobile devices */ 
+@media (max-width: 576px){ 
+    #filters{ 
+        gap: 0.5rem; 
+        justify-content: center; 
+    } 
+ 
+    .filter{ 
+        margin-right: 0.5rem; 
+        min-width: 4.5rem; 
+    } 
+ 
+    .filter p{ 
+        font-size: 0.7rem; 
+        margin-bottom: 0.3rem; 
+    } 
+ 
+    .tax-toggle{ 
+        width: auto; 
+        height: auto; 
+        margin: 0.8rem auto 1rem auto; 
+        padding: 0.8rem 1.2rem; 
+        text-align: center; 
+    } 
+}
